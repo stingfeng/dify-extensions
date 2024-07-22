@@ -1,0 +1,80 @@
+identity:
+  name: google_custom_search
+  author: Sting Feng
+  label:
+    en_US: GoogleCustomSearch
+    zh_Hans: 谷歌自定义搜索
+    pt_BR: GoogleCustomSearch
+description:
+  human:
+    en_US: A tool for performing a Google custom search and extracting snippets and webpages.Input should be a search query.
+    zh_Hans: 一个用于执行 Google 自定义搜索并提取片段和网页的工具。输入应该是一个搜索查询。
+    pt_BR: A tool for performing a Google custom search and extracting snippets and webpages.Input should be a search query.
+  llm: A tool for performing a Google custom search and extracting snippets and webpages.Input should be a search query.
+parameters:
+  - name: query
+    type: string
+    required: true
+    label:
+      en_US: Query string
+      zh_Hans: 查询语句
+      pt_BR: Query string
+    human_description:
+      en_US: used for searching
+      zh_Hans: 用于搜索网页内容
+      pt_BR: used for searching
+    llm_description: key words for searching
+    form: llm
+  - name: num_results
+    type: number
+    required: false
+    label:
+      en_US: Max number of results
+      zh_Hans: 最大结果数
+      pt_BR: Max number of results
+    human_description:
+      en_US: Max number of results returned by google search
+      zh_Hans: Google 搜索返回的最大结果数
+      pt_BR: Max number of results returned by google search
+    form: form
+  - name: site_search
+    type: string
+    required: false
+    label:
+      en_US: Sites to search
+      zh_Hans: 指定的搜索网站
+      pt_BR: Sites to search
+    human_description:
+      en_US: Specify the sites to google search, multiple sites separated by comma
+      zh_Hans: 指定要搜索的网站，多个网站用逗号分隔
+      pt_BR: Specify the sites to google search, multiple sites separated by comma
+    form: form
+  - name: result_type
+    type: select
+    required: true
+    options:
+      - value: text
+        label:
+          en_US: text
+          zh_Hans: 文本
+          pt_BR: texto
+      - value: link
+        label:
+          en_US: link
+          zh_Hans: 链接
+          pt_BR: link
+      - value: json
+        label:
+          en_US: json
+          zh_Hans: json
+          pt_BR: json
+    default: link
+    label:
+      en_US: Result type
+      zh_Hans: 结果类型
+      pt_BR: Result type
+    human_description:
+      en_US: used for selecting the result type, text or link
+      zh_Hans: 用于选择结果类型，使用文本还是链接进行展示
+      pt_BR: used for selecting the result type, text or link
+    form: form

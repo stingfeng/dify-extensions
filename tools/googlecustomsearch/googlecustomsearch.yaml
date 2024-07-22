@@ -1,0 +1,45 @@
+identity:
+  author: Sting Feng
+  name: googlecustomsearch
+  label:
+    en_US: Google Custom Search
+    zh_Hans: 谷歌自定义搜索
+    pt_BR: Google Custom Search
+  description:
+    en_US: Google Custom Search
+    zh_Hans: 谷歌自定义搜索
+    pt_BR: Google Custom Search
+  icon: icon.svg
+credentials_for_provider:
+  google_api_key:
+    type: secret-input
+    required: true
+    label:
+      en_US: Google API key
+      zh_Hans: 谷歌API key
+      pt_BR: Google API key
+    placeholder:
+      en_US: Please input your Google API key
+      zh_Hans: 请输入你的谷歌 API key
+      pt_BR: Please input your Google API key
+    help:
+      en_US: Get your Google API key from Google
+      zh_Hans: 从谷歌获取您的谷歌 API key
+      pt_BR: Get your Google API key from Google
+    url: https://console.cloud.google.com/apis/credentials
+  google_cse_id:
+    type: secret-input
+    required: true
+    label:
+      en_US: Google Custom Search Engine ID
+      zh_Hans: 谷歌自定义搜索引擎 ID
+      pt_BR: Google Custom Search Engine ID
+    placeholder:
+      en_US: Please input your Google CSE ID
+      zh_Hans: 请输入你的谷歌 CSE ID
+      pt_BR: Please input your Google CSE ID
+    help:
+      en_US: Get your Google CSE ID from Google
+      zh_Hans: 从谷歌获取您的谷歌 CSE ID
+      pt_BR: Get your Google CSE ID from Google
+    url: https://programmablesearchengine.google.com
