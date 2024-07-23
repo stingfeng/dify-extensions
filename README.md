@@ -26,5 +26,14 @@ Google Custom Search tool. The official Google Search plugin provided by Dify re
 
 ### How to use
 
-1. Copy the googlecustomesearch directory to the `api/core/tools/provider/builtin` directory of the Dify project;
+1. Copy the `googlecustomesearch` directory to the `api/core/tools/provider/builtin` directory of the Dify project;
+2. Compile the Dify API docker image.
+
+## tools/textsimilarity
+
+Text similarity calculation, used to measure the similarity between the content recalled from the knowledge base and the answers provided by the LLM. For example, if you recall 3 pieces of material from the knowledge base and provide them to the LLM to answer a user's question, you may want to know which piece of material the LLM's answer referenced, or if it referenced any of the provided materials at all. This can be determined by calculating the similarity between them.
+
+### How to use
+
+1. Copy the `textsimilarity` directory to the `api/core/tools/provider/builtin` directory of the Dify project;
 2. Compile the Dify API docker image.

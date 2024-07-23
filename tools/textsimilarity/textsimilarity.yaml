@@ -1,0 +1,12 @@
+identity:
+  author: Sting Feng
+  name: textsimilarity
+  label:
+    en_US: Text Similarity
+    zh_Hans: 文本相似度计算
+    pt_BR: Text Similarity
+  description:
+    en_US: Text Similarity
+    zh_Hans: 文本相似度计算
+    pt_BR: Text Similarity
+  icon: icon.svg

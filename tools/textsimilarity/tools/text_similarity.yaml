@@ -1,0 +1,40 @@
+identity:
+  name: text_similarity
+  author: Sting Feng
+  label:
+    en_US: TextSimilarity
+    zh_Hans: 文本相似度计算
+    pt_BR: TextSimilarity
+description:
+  human:
+    en_US: A tool accepting two pieces of texts to calculate their similarity.
+    zh_Hans: 一个用于计算两段文本之间的相似度的工具。
+    pt_BR: A tool accepting two pieces of texts to calculate their similarity.
+  llm: A tool accepting two pieces of texts to calculate their similarity.
+parameters:
+  - name: retrieved_contexts
+    type: string
+    required: true
+    label:
+      en_US: Contexts retrieved from dataset
+      zh_Hans: 数据集中检索到的上下文
+      pt_BR: Contexts retrieved from dataset
+    human_description:
+      en_US: Contexts retrieved from dataset
+      zh_Hans: 数据集中检索到的上下文
+      pt_BR: Contexts retrieved from dataset
+    llm_description: Contexts retrieved from dataset
+    form: llm
+  - name: llm_answer
+    type: string
+    required: true
+    label:
+      en_US: Answer returned by LLM
+      zh_Hans: LLM返回的答案
+      pt_BR: Answer returned by LLM
+    human_description:
+      en_US: Answer returned by LLM
+      zh_Hans: LLM返回的答案
+      pt_BR: Answer returned by LLM
+    llm_description: Answer returned by LLM
+    form: llm

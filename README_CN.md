@@ -27,3 +27,12 @@ Google Custom Search插件。Dify官方提供的Google Search插件依赖[Serp A
 
 1. 把googlecustomesearch目录拷贝到Dify项目的`api/core/tools/provider/builtin`目录；
 2. 编译Dify的api docker镜像。
+
+## tools/textsimilarity
+
+文本相似度计算，用于计算从知识库中召回的内容和LLM回答之间的相似度。比如，你从知识库中召回了3篇材料，一起交给LLM回答用户提问，你想知道LLM的回答引用了哪篇材料，或者有没有引用你提供的材料，可以通过计算它们之间的相似度来判别。
+
+### 如何使用
+
+1. 把textsimilarity目录拷贝到Dify项目的`api/core/tools/provider/builtin`目录；
+2. 编译Dify的api docker镜像。
